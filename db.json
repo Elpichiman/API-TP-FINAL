@@ -1,0 +1,168 @@
+{
+  "name": "tu-proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
+  },
+  "Aerolinea": [
+    {
+      "N_Aerolinea": "12345",
+      "Nombre_Aerolinea": "Vuelos Marcelitos",
+      "Contacto": "contacto@vuelosmarcelitos.com",
+      "Pais": "Argentina"
+    }
+  ],
+  "aerolineas": [
+    {
+      "id": 1,
+      "nombre": "Aerolínea Ejemplo",
+      "cant_aviones": 50,
+      "pais": "País Ejemplo",
+      "alcance_mundo": "Global"
+    },
+    {
+      "id": 2,
+      "nombre": "Otra Aerolínea",
+      "cant_aviones": 30,
+      "pais": "Otro País",
+      "alcance_mundo": "Regional"
+    },
+    {
+      "nombre": "Aerolina pichi",
+      "cant_aviones": 25,
+      "pais": "New york",
+      "alcance_mundo": "Global",
+      "id": 3
+    }
+  ],
+  "pasajeros": [
+    {
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "dni": "12345678",
+      "contraseña": "miContraseñaSegura",
+      "usuario": "juanperez",
+      "mediosDePago": [
+        "tarjeta de crédito",
+        "PayPal"
+      ],
+      "id": 1
+    },
+    {
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "dni": "12345678",
+      "contraseña": "miContraseñaSegura",
+      "usuario": "juanperez",
+      "mediosDePago": [
+        "tarjeta de crédito",
+        "PayPal"
+      ],
+      "id": 2
+    },
+    {
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "dni": "12345678",
+      "contraseña": "miContraseñaSegura",
+      "usuario": "juanperez",
+      "mediosDePago": [
+        "tarjeta de crédito",
+        "PayPal"
+      ],
+      "id": 3
+    },
+    {
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "dni": "12345678",
+      "contraseña": "miContraseñaSegura",
+      "usuario": "juanperez",
+      "mediosDePago": [
+        "tarjeta de crédito",
+        "PayPal"
+      ],
+      "id": 4
+    },
+    {
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "dni": "12345678",
+      "contraseña": "miContraseñaSegura",
+      "usuario": "juanperez",
+      "mediosDePago": [
+        "tarjeta de crédito",
+        "PayPal"
+      ],
+      "id": 5
+    }
+  ],
+  "vuelos": [
+    {
+      "id": 1,
+      "horario": "2023-10-01T10:00:00Z",
+      "lugar_salida": "Ciudad A",
+      "lugar_llegada": "Ciudad B",
+      "aerolinea_id": 1
+    },
+    {
+      "horario": "2023-11-01T10:00:10Z",
+      "lugar_salida": "Ciudad A",
+      "lugar_llegada": "Ciudad B",
+      "id": 2
+    },
+    {
+      "horario": "2023-10-01T10:00:00Z",
+      "lugar_salida": "Ciudad A",
+      "lugar_llegada": "Ciudad B",
+      "id": 3
+    },
+    {
+      "horario": "2023-10-01T10:00:00Z",
+      "lugar_salida": "Ciudad A",
+      "lugar_llegada": "Ciudad B",
+      "aerolinea_id": 1,
+      "id": 4
+    },
+    {
+      "horario": "2023-10-01T10:00:00Z",
+      "lugar_salida": "Ciudad A",
+      "lugar_llegada": "Ciudad B",
+      "aerolinea_id": 1,
+      "id": 5
+    }
+  ],
+  "asientos": [
+    {
+      "id": 1,
+      "vuelo_id": 1,
+      "clase": "alta",
+      "estado": "comprado"
+    },
+    {
+      "id": 2,
+      "vuelo_id": 1,
+      "clase": "media",
+      "estado": "disponible"
+    },
+    {
+      "id": 3,
+      "vuelo_id": 1,
+      "clase": "baja",
+      "estado": "disponible"
+    },
+    {
+      "vuelo_id": 1,
+      "clase": "alta",
+      "estado": "disponible",
+      "id": 4
+    }
+  ]
+}
