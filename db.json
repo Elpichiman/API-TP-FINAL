@@ -29,10 +29,10 @@
     },
     {
       "id": 2,
-      "nombre": "Otra Aerolínea",
-      "cant_aviones": 30,
-      "pais": "Otro País",
-      "alcance_mundo": "Regional"
+      "nombre": "Aerolínea A Modificada",
+      "cant_aviones": "50",
+      "pais": "Argentina",
+      "alcance_mundo": "regional"
     },
     {
       "nombre": "Aerolina pichi",
@@ -40,6 +40,13 @@
       "pais": "New york",
       "alcance_mundo": "Global",
       "id": 3
+    },
+    {
+      "nombre": "Aerolina pichi",
+      "cant_aviones": 25,
+      "pais": "New york",
+      "alcance_mundo": "Global",
+      "id": 4
     }
   ],
   "pasajeros": [
@@ -56,15 +63,12 @@
       "id": 1
     },
     {
-      "nombre": "Juan",
+      "nombre": "Juan Carlos",
       "apellido": "Pérez",
       "dni": "12345678",
-      "contraseña": "miContraseñaSegura",
-      "usuario": "juanperez",
-      "mediosDePago": [
-        "tarjeta de crédito",
-        "PayPal"
-      ],
+      "contraseña": "123456",
+      "usuario": "juanca",
+      "mediosDePago": "credito",
       "id": 2
     },
     {
@@ -80,15 +84,12 @@
       "id": 3
     },
     {
-      "nombre": "Juan",
+      "nombre": "Juan Carlos",
       "apellido": "Pérez",
       "dni": "12345678",
-      "contraseña": "miContraseñaSegura",
-      "usuario": "juanperez",
-      "mediosDePago": [
-        "tarjeta de crédito",
-        "PayPal"
-      ],
+      "contraseña": "123456",
+      "usuario": "juanca",
+      "mediosDePago": "credito",
       "id": 4
     },
     {
@@ -102,6 +103,18 @@
         "PayPal"
       ],
       "id": 5
+    },
+    {
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "dni": "12345678",
+      "contraseña": "miContraseñaSegura",
+      "usuario": "juanperez",
+      "mediosDePago": [
+        "tarjeta de crédito",
+        "PayPal"
+      ],
+      "id": 6
     }
   ],
   "vuelos": [
@@ -113,9 +126,9 @@
       "aerolinea_id": 1
     },
     {
-      "horario": "2023-11-01T10:00:10Z",
-      "lugar_salida": "Ciudad A",
-      "lugar_llegada": "Ciudad B",
+      "horario": "2024-10-01T10:00:00Z Modificado",
+      "lugar_salida": "Ciudad A Modificada",
+      "lugar_llegada": "Ciudad B Modificada",
       "id": 2
     },
     {
@@ -137,6 +150,13 @@
       "lugar_llegada": "Ciudad B",
       "aerolinea_id": 1,
       "id": 5
+    },
+    {
+      "horario": "2023-10-01T10:00:00Z",
+      "lugar_salida": "Ciudad A",
+      "lugar_llegada": "Ciudad B",
+      "aerolinea_id": 1,
+      "id": 6
     }
   ],
   "asientos": [
@@ -144,7 +164,7 @@
       "id": 1,
       "vuelo_id": 1,
       "clase": "alta",
-      "estado": "comprado"
+      "estado": "no disponible"
     },
     {
       "id": 2,
@@ -162,7 +182,9 @@
       "vuelo_id": 1,
       "clase": "alta",
       "estado": "disponible",
-      "id": 4
+      "id": 4,
+      "numero": "13A",
+      "tipo": "Pobreton"
     }
   ]
 }
