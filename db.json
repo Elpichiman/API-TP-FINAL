@@ -11,180 +11,157 @@
     "express": "^4.17.1",
     "body-parser": "^1.19.0"
   },
-  "Aerolinea": [
-    {
-      "N_Aerolinea": "12345",
-      "Nombre_Aerolinea": "Vuelos Marcelitos",
-      "Contacto": "contacto@vuelosmarcelitos.com",
-      "Pais": "Argentina"
-    }
-  ],
   "aerolineas": [
     {
-      "id": 1,
-      "nombre": "Aerolínea Ejemplo",
-      "cant_aviones": 50,
-      "pais": "País Ejemplo",
-      "alcance_mundo": "Global"
-    },
-    {
-      "id": 2,
-      "nombre": "Aerolínea A Modificada",
-      "cant_aviones": "50",
+      "nombre": "Aerolínea Jet",
+      "cant_aviones": 10,
       "pais": "Argentina",
-      "alcance_mundo": "regional"
-    },
-    {
-      "nombre": "Aerolina pichi",
-      "cant_aviones": 25,
-      "pais": "New york",
       "alcance_mundo": "Global",
-      "id": 3
-    },
-    {
-      "nombre": "Aerolina pichi",
-      "cant_aviones": 25,
-      "pais": "New york",
-      "alcance_mundo": "Global",
-      "id": 4
+      "gmail": "contacto@aerolineajet.com",
+      "numero_telefono": "123-456-7890",
+      "id": 1,
+      "estado": "ACTIVO"
     }
   ],
-  "pasajeros": [
+  "aviones": [
     {
-      "nombre": "Juan",
-      "apellido": "Pérez",
-      "dni": "12345678",
-      "contraseña": "miContraseñaSegura",
-      "usuario": "juanperez",
-      "mediosDePago": [
-        "tarjeta de crédito",
-        "PayPal"
-      ],
+      "modelo": "Boeing 737",
+      "capacidad": 2,
+      "aerolineaId": 1,
       "id": 1
     },
     {
-      "nombre": "Juan Carlos",
-      "apellido": "Pérez",
-      "dni": "12345678",
-      "contraseña": "123456",
-      "usuario": "juanca",
-      "mediosDePago": "credito",
+      "modelo": "Boeing 738",
+      "capacidad": 2,
+      "aerolineaId": 1,
       "id": 2
     },
     {
-      "nombre": "Juan",
-      "apellido": "Pérez",
-      "dni": "12345678",
-      "contraseña": "miContraseñaSegura",
-      "usuario": "juanperez",
-      "mediosDePago": [
-        "tarjeta de crédito",
-        "PayPal"
-      ],
+      "modelo": "Boeing 739",
+      "capacidad": 2,
+      "aerolineaId": 1,
       "id": 3
-    },
-    {
-      "nombre": "Juan Carlos",
-      "apellido": "Pérez",
-      "dni": "12345678",
-      "contraseña": "123456",
-      "usuario": "juanca",
-      "mediosDePago": "credito",
-      "id": 4
-    },
-    {
-      "nombre": "Juan",
-      "apellido": "Pérez",
-      "dni": "12345678",
-      "contraseña": "miContraseñaSegura",
-      "usuario": "juanperez",
-      "mediosDePago": [
-        "tarjeta de crédito",
-        "PayPal"
-      ],
-      "id": 5
-    },
-    {
-      "nombre": "Juan",
-      "apellido": "Pérez",
-      "dni": "12345678",
-      "contraseña": "miContraseñaSegura",
-      "usuario": "juanperez",
-      "mediosDePago": [
-        "tarjeta de crédito",
-        "PayPal"
-      ],
-      "id": 6
     }
   ],
   "vuelos": [
     {
-      "id": 1,
-      "horario": "2023-10-01T10:00:00Z",
-      "lugar_salida": "Ciudad A",
-      "lugar_llegada": "Ciudad B",
-      "aerolinea_id": 1
+      "origen": "Neuquen",
+      "destino": "Cordoba",
+      "horario_salida": "2023-11-10T11:00:00Z",
+      "horario_llegada": "2023-11-10T13:00:00Z",
+      "estado": "ACTIVO",
+      "numeroVuelo": "A124",
+      "duracion": "2:30h",
+      "avionId": 1,
+      "limiteAsientos": 2,
+      "id": 1
     },
     {
-      "horario": "2024-10-01T10:00:00Z Modificado",
-      "lugar_salida": "Ciudad A Modificada",
-      "lugar_llegada": "Ciudad B Modificada",
+      "origen": "neuquen",
+      "destino": "calafate",
+      "horario_salida": "2023-10-10T10:00:00Z",
+      "horario_llegada": "2023-10-10T12:00:00Z",
+      "estado": "ACTIVO",
+      "numeroVuelo": "B123",
+      "duracion": "1:30h",
+      "avionId": 2,
+      "limiteAsientos": 2,
       "id": 2
-    },
-    {
-      "horario": "2023-10-01T10:00:00Z",
-      "lugar_salida": "Ciudad A",
-      "lugar_llegada": "Ciudad B",
-      "id": 3
-    },
-    {
-      "horario": "2023-10-01T10:00:00Z",
-      "lugar_salida": "Ciudad A",
-      "lugar_llegada": "Ciudad B",
-      "aerolinea_id": 1,
-      "id": 4
-    },
-    {
-      "horario": "2023-10-01T10:00:00Z",
-      "lugar_salida": "Ciudad A",
-      "lugar_llegada": "Ciudad B",
-      "aerolinea_id": 1,
-      "id": 5
-    },
-    {
-      "horario": "2023-10-01T10:00:00Z",
-      "lugar_salida": "Ciudad A",
-      "lugar_llegada": "Ciudad B",
-      "aerolinea_id": 1,
-      "id": 6
     }
   ],
   "asientos": [
     {
+      "numero": "1",
+      "clase": "Económica",
+      "estado": "RESERVADO",
+      "precio": 100,
+      "disponible": false,
+      "vueloId": 1,
+      "id": 1
+    },
+    {
+      "numero": "1B",
+      "clase": "Económica",
+      "estado": "SIN RESERVAR",
+      "precio": 100,
+      "disponible": true,
+      "vueloId": 1,
+      "id": 2
+    },
+    {
+      "numero": "1A",
+      "clase": "Ejecutiva",
+      "estado": "SIN RESERVAR",
+      "precio": 100,
+      "disponible": true,
+      "vueloId": 2,
+      "id": 3
+    },
+    {
+      "numero": "1B",
+      "clase": "Ejecutiva",
+      "estado": "SIN RESERVAR",
+      "precio": 100,
+      "disponible": true,
+      "vueloId": 2,
+      "id": 4
+    }
+  ],
+  "pagos": [
+    {
       "id": 1,
+      "pasajeroId": 1,
+      "vueloId": 1,
+      "asientoId": 1,
+      "metodoPago": "Tarjeta de Crédito",
+      "fecha": "2024-11-17T02:34:17.219Z",
+      "estado": "ACTIVO"
+    }
+  ],
+  "boletas": [
+    {
+      "id": 1,
+      "nombre": "nicolas elgueta",
+      "num_asiento": 1,
+      "clase": "Económica",
+      "precio": 100,
       "vuelo_id": 1,
-      "clase": "alta",
-      "estado": "no disponible"
+      "horario": {
+        "salida": "2023-11-10T11:00:00Z",
+        "llegada": "2023-11-10T13:00:00Z"
+      },
+      "lugar": {
+        "salida": "Neuquen",
+        "llegada": "Cordoba"
+      },
+      "estado": "COMPRADA",
+      "fecha_compra": "2024-11-17T02:35:54.713Z"
+    }
+  ],
+  "pasajeros": [
+    {
+      "nombre": "nicolas elgueta",
+      "dni": "12345639",
+      "telefono": "987654331",
+      "correo": "juanperez@example.com",
+      "estado": "ACTIVO",
+      "id": 1
     },
     {
-      "id": 2,
-      "vuelo_id": 1,
-      "clase": "media",
-      "estado": "disponible"
+      "nombre": "nazareno alvarez",
+      "dni": "123456781",
+      "telefono": "98765456",
+      "correo": "juancito@example.com",
+      "estado": "ACTIVO",
+      "id": 2
     },
     {
-      "id": 3,
-      "vuelo_id": 1,
-      "clase": "baja",
-      "estado": "disponible"
-    },
-    {
-      "vuelo_id": 1,
-      "clase": "alta",
-      "estado": "disponible",
-      "id": 4,
-      "numero": "13A",
-      "tipo": "Pobreton"
+      "nombre": "gomez gutierrez",
+      "dni": "123456788",
+      "telefono": "9876543",
+      "correo": "juan@example.com",
+      "estado": "ACTIVO",
+      "id": 3
     }
   ]
 }
